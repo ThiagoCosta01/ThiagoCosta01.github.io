@@ -1,0 +1,7 @@
+.container a{
+    color: var(--primary);
+}
+
+.container a:hover{
+    color: var(--primary-hover);
+}

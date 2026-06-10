@@ -4,12 +4,30 @@ import Logo from "../Logo/Logo";
 import ThemeButton from "../../ui/ThemeButton/ThemeButton";
 import LanguageButton from "../../ui/LanguageButton/LanguageButton";
 import { useLanguage } from "../../../context/LanguageContext";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
     const { t } = useLanguage();
-    
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className={styles.navbar}>
+        <nav
+            className={`${styles.navbar} ${scrolled ? styles.scrolled : ""
+                }`}
+        >
             <div className={`${styles.container}`}>
                 <div className={styles.logo}>
                     <Logo mode="full" />

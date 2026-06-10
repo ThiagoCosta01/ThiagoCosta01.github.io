@@ -1,4 +1,4 @@
-import Home from '../pages/Home'
+import Home from '../pages/Home/Home'
 import About from '../pages/About'
 import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'

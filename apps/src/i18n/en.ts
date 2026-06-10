@@ -1,4 +1,10 @@
 export const en = {
+  introductionSection: {
+    introText: "Olá, me chamo",
+    name: "Thiago Costa",
+    text: "hi",
+  },
+  
   navbar: {
     home: "Home",
     about: "About",
@@ -6,12 +12,16 @@ export const en = {
     projects: "Projects",
     certifications: "Certifications"
   },
+  
+  curriculum: {
+    link: "https://drive.google.com/uc?export=download&id=1VBZ6W-KppgPfYl5JmngfqMSfbWLMaYCQ&utm_source=chatgpt.com"
+  },
 
   projects: {
 
     "cronos": {
       title: "Cronos",
-      subtitle: "(Private Project)",
+      subtitle: "Private Project",
       description: "Marcador de Tempo"
     },
     "sci": {
@@ -31,12 +41,12 @@ export const en = {
     },
     "personal-website": {
       title: "Portfólio pessoal",
-      subtitle: "",
+      subtitle: "Personal Website",
       description: "Site desenvolvido com React e TypeScript"
     },
     "keycloak": {
       title: "SSO",
-      subtitle: "",
+      subtitle: "Private Project",
       description: "Site desenvolvido com React e TypeScript"
     },
   }

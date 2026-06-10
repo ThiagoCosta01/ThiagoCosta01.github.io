@@ -1,4 +1,14 @@
 export const pt = {
+  introductionSection: {
+    introText: "Olá, me chamo",
+    name: "Thiago Costa",
+    text: "Desenvolvedor de Software especializado em aplicações corporativas, automação e integração de sistemas. Transformo requisitos complexos em soluções escaláveis utilizando Java, Spring Boot, Node.js, React, Docker e práticas modernas de DevOps.",
+  },
+
+  curriculum: {
+    link: "https://drive.google.com/uc?export=download&id=1VBZ6W-KppgPfYl5JmngfqMSfbWLMaYCQ&utm_source=chatgpt.com"
+  },
+
   navbar: {
     home: "Início",
     about: "Sobre",
@@ -11,7 +21,7 @@ export const pt = {
 
     "cronos": {
       title: "Cronos",
-      subtitle: "(Projeto Corporativo Privado)",
+      subtitle: "Projeto Corporativo Privado",
       description: "Marcador de Tempo"
     },
     "sci": {
@@ -21,7 +31,7 @@ export const pt = {
     },
     "icone-website": {
       title: "Portal Institucional da Icone Consultoria e Engenharia",
-      subtitle: "Website",
+      subtitle: "Website Corporativo",
       description: "Site desenvolvido com Angular"
     },
     "kataink": {
@@ -31,12 +41,12 @@ export const pt = {
     },
     "personal-website": {
       title: "Portfólio pessoal",
-      subtitle: "",
+      subtitle: "Website",
       description: "Site desenvolvido com React e TypeScript"
     },
     "keycloak": {
       title: "SSO",
-      subtitle: "",
+      subtitle: "Projeto Corporativo Privado",
       description: "Site desenvolvido com React e TypeScript"
     }
 

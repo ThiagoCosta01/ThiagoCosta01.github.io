@@ -6,19 +6,26 @@
 
   backdrop-filter: blur(10px);
 
-  background-color: var(--surface);
-
-  border-bottom: 1px solid var(--nav-border);
+  background-color: var(--nav-bg);
 
   z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.scrolled {
+    border-bottom: 1px solid var(--nav-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .container {
-  max-width: 1200px;
-
-  margin: 0 auto;
-
   padding: 1rem;
+  width: 90%;
 
   display: flex;
 

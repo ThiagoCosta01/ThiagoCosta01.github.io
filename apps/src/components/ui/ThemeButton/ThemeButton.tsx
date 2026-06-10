@@ -1,3 +1,4 @@
+import { GeneralIcons } from "../../../config/GeneralIcons";
 import { useTheme } from "../../../hooks/useTheme";
 
 export default function ThemeButton() {
@@ -5,7 +6,7 @@ export default function ThemeButton() {
 
   return (
     <button onClick={toggleTheme}>
-      {theme === "light" ? "🌙" : "☀️"}
+      {theme === "light" ? <GeneralIcons.moon /> : <GeneralIcons.sun color="var(--text)" />}
     </button>
   );
 }

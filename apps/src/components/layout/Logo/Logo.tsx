@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "./Logo.module.css"
 
 type LogoMode = "simbol" | "name" | "full";
 
@@ -19,7 +20,9 @@ export default function Logo({ mode }: LogoProps) {
 
     return (
         <>
-            <Link to="/">{map[mode]}</Link>
+            <div className={`${styles.container}`}>
+                <Link to="/">{map[mode]}</Link>
+            </div >
         </>
     )
 }

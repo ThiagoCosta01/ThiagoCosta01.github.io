@@ -1,3 +1,4 @@
+import { GeneralIcons } from "../../../config/GeneralIcons";
 import { techIcons } from "../../../config/techIcons";
 import type { Project } from "../../../types/Project";
 import styles from "./ProjectCard.module.css";
@@ -14,7 +15,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <div className={styles.container}>
-            <a href={link}>
+            <a className={styles.items} href={link} target="_blank">
 
                 <div className={styles.picture}>
                     {picture && <img src={picture} alt={title} />}
@@ -32,6 +33,13 @@ export default function ProjectCard({
                         <p>{description}</p>
                     </div>
 
+                </div>
+                
+                <div className={`${styles.icons}`}>
+                    <div className={styles.showProject}>
+                        <GeneralIcons.eye />
+                    </div>
+
                     <div className={styles.technologies}>
                         {technologies?.map((tech) => {
                             const Icon = techIcons[tech as keyof typeof techIcons];
@@ -39,6 +47,7 @@ export default function ProjectCard({
                             return Icon ? <Icon key={tech} /> : null;
                         })}
                     </div>
+
                 </div>
             </a>
         </div>
