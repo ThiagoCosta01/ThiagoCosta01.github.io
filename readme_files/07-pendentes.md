@@ -6,5 +6,6 @@
 [] - Versão inglês
 [] - Página de "Em construção"
 [] - Versão mobile
+[] - Email proton
 
 ## Feitos
