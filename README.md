@@ -1,75 +1,167 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Visão Geral do Sistema
 
-Currently, two official plugins are available:
+**Nome do Projeto:** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Cliente:** 
 
-## React Compiler
+**Identificador do Aplicativo:** 
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+**Última Versão Lançada:**  
 
-Note: This will impact Vite dev & build performances.
+**Versão em Desenvolvimento:** 
 
-## Expanding the ESLint configuration
+**Descrição:** 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Stakeholders:**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Usuários:** 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Principais Tecnologias:**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+
+
+
+---
+## 📑 Sumário
+
+- [01 Arquitetura](#01-arquitetura)
+- [02 Desenvolvimento](#02-desenvolvimento)
+- [03 Estrutura De Pastas](#03-estrutura-de-pastas)
+- [04 Ambiente](#04-ambiente)
+- [05 Ops](#05-ops)
+- [06 Notas](#06-notas)
+- [07 Pendentes](#07-pendentes)
+
+
+---
+<details>
+  <summary>📌 01 Arquitetura</summary>
+
+# Arquitetura
+
+## Descrição
+
+</details>
+
+---
+<details>
+  <summary>📌 02 Desenvolvimento</summary>
+
+# Práticas Para Desenvolvimento do Sistema
+
+# Segurança
+- Uso de `variáveis de Ambiente`, que devem ser adicionadas ao `.gitignore`
+- Colocar `variáveis sensíveis` (senhas e tokens) em `Current Value` no `Postman`
+
+# Convenções de Desenvolvimento
+
+## Commits
+- Seguir Conventional Commits
+    - `<tipo>(<escopo opcional>): <descrição curta>`
+    - De preferência em `Inglês` e na `3ª pessoa do singular` (it does), para padronização
+
+- Exemplos:
+  - feat(auth): adds login OAuth
+  - fix(api): corrects validation bug
+  - docs: updates doc file x
+
+## Padrões
+
+### Linguagem:
+</details>
+
+---
+<details>
+  <summary>📌 03 Estrutura De Pastas</summary>
+
+# Estrutura de Pastas
+
+## Raíz do Repositório
+
+```
+Project-Root/
+├─ apps/ # Aplicativos do Repositório
+├─ docs/ # Documentação do Repositório
+├─ infra/ # Arquivos de configuração, preparação do ambiente e scripts de apoio
+├─ .github/workflows/ # Scripts de CI/CD
+├─ .gitignore # Arquivos a serem ignorados em todos commits
+├─ README.md # Documentação integral feita a partir dos arquivos de /docs
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Apps
 ```
+apps/(nome do app)
+├── src/ # Código-fonte principal
+
+```
+</details>
+
+---
+<details>
+  <summary>📌 04 Ambiente</summary>
+
+# Preparação do Ambiente
+
+## Ambiente de Desenvolvimento via Docker:
+
+1. **Subir o container stack** 
+
+
+2. **Povoar banco de dados**
+
+
+
+</details>
+
+---
+<details>
+  <summary>📌 05 Ops</summary>
+
+# Pipeline DevOps
+
+## CI
+
+**Descrição**: Processos que ocorrem durante a integração e atualização de código do repositório (commits)
+
+**Processos**:
+
+- Atualizar README.md principal automaticamente
+    - Arquivo: `generate_readme[version].yml`
+    - Funcionalidade: atualiza o README.md da raíz do repositório sempre que algum arquivo localizado em `docs/` for alterado
+    - Branches: todas, com exceção da principal
+</details>
+
+---
+<details>
+  <summary>📌 06 Notas</summary>
+
+# Notas
+
+ **Descrição:** Notas e informativos úteis para a documentação, como decisões arquiteturais e opiniões.
+
+  **Formato:** [- data - nome do autor - descrição]. Em ordem descendente por data
+
+## Conteúdo
+
+- 02/10/2025 - Thiago Costa - Nota inicial de exemplo
+</details>
+
+---
+<details>
+  <summary>📌 07 Pendentes</summary>
+
+# Pendentes
+[] - Seção de skills
+[] - Melhor intro section
+[] - Organizar projetos
+[] - Atualizar footer
+[] - Versão inglês
+[] - Página de "Em construção"
+[] - Versão mobile
+[] - Email proton
+
+## Feitos
+
+</details>
