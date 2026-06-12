@@ -1,23 +1,17 @@
 
 # Visão Geral do Sistema
 
-**Nome do Projeto:** 
+**Nome do Projeto:** Website Portfolio
 
-**Cliente:** 
+**Tipo:** Pessoal 
 
-**Identificador do Aplicativo:** 
+**Última Versão Lançada:**  Em desenvolvimento
 
-**Última Versão Lançada:**  
+**Versão em Desenvolvimento:** 0.0.0
 
-**Versão em Desenvolvimento:** 
+**Descrição:** Meu site de portfólio.
 
-**Descrição:** 
-
-**Stakeholders:**
-
-**Usuários:** 
-
-**Principais Tecnologias:**
+**Principais Tecnologias:** React, typescript, github, actions
 
 
 
@@ -53,23 +47,19 @@
 
 # Segurança
 - Uso de `variáveis de Ambiente`, que devem ser adicionadas ao `.gitignore`
-- Colocar `variáveis sensíveis` (senhas e tokens) em `Current Value` no `Postman`
+- Colocar `variáveis sensíveis` (senhas e tokens) em `Current Value` no `Postman` para backend
 
 # Convenções de Desenvolvimento
 
 ## Commits
 - Seguir Conventional Commits
     - `<tipo>(<escopo opcional>): <descrição curta>`
-    - De preferência em `Inglês` e na `3ª pessoa do singular` (it does), para padronização
+    - De preferência em `Inglês` e na `Simple Present`, para padronização
 
 - Exemplos:
   - feat(auth): adds login OAuth
   - fix(api): corrects validation bug
   - docs: updates doc file x
-
-## Padrões
-
-### Linguagem:
 </details>
 
 ---
@@ -82,9 +72,9 @@
 
 ```
 Project-Root/
-├─ apps/ # Aplicativos do Repositório
-├─ docs/ # Documentação do Repositório
-├─ infra/ # Arquivos de configuração, preparação do ambiente e scripts de apoio
+├─ src/ # Aplicativo do Repositório
+├─ docs/ # dist 
+├─ readme_files/ # Documentação do Repositório
 ├─ .github/workflows/ # Scripts de CI/CD
 ├─ .gitignore # Arquivos a serem ignorados em todos commits
 ├─ README.md # Documentação integral feita a partir dos arquivos de /docs
@@ -104,14 +94,15 @@ apps/(nome do app)
 
 # Preparação do Ambiente
 
-## Ambiente de Desenvolvimento via Docker:
-
-1. **Subir o container stack** 
-
-
-2. **Povoar banco de dados**
+1. **Subir o servidor de desenvolvimento**
+- npm run dev 
 
 
+2. **Gerar dist**
+- npm run build
+
+3. **Enviar para github pages**
+- npm run deploy
 
 </details>
 
@@ -145,7 +136,7 @@ apps/(nome do app)
 
 ## Conteúdo
 
-- 02/10/2025 - Thiago Costa - Nota inicial de exemplo
+- 02/06/2026 - Thiago Costa - Nota inicial de exemplo
 </details>
 
 ---
@@ -153,15 +144,24 @@ apps/(nome do app)
   <summary>📌 07 Pendentes</summary>
 
 # Pendentes
-[] - Seção de skills
-[] - Melhor intro section
+
 [] - Organizar projetos
-[] - Atualizar footer
-[] - Versão inglês
-[] - Página de "Em construção"
-[] - Versão mobile
-[] - Email proton
+
+[] - Cmd em movimento
 
 ## Feitos
 
+[ x ] - Atualizar footer
+
+[ x ] - Página de "Em construção"
+
+[ x ] - Melhorar intro section
+
+[ x ] - Versão mobile
+
+[ x ] - Melhorar navbar
+
+[ x ] - Seção de skills
+
+[ x ] - Currículo Inglês
 </details>
