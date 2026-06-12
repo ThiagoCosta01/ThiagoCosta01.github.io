@@ -15,6 +15,9 @@
 
   --nav-bg: #0a0a0abc;
   --nav-border: rgba(255, 255, 255, 0.08);
+
+  --skills-button-border: rgba(255, 255, 255, 0.08);
+  --skills-button-background: ;
 }
 
 [data-theme="light"] {
@@ -30,4 +33,6 @@
 
   --nav-bg: rgba(255, 255, 255, 0.7);
   --nav-border: rgba(0, 0, 0, 0.08);
+
+  --skills-button-border: rgba(14, 10, 35, 0.08);
 }

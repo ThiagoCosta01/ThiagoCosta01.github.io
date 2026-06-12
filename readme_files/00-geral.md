@@ -1,22 +1,16 @@
 # Visão Geral do Sistema
 
-**Nome do Projeto:** 
+**Nome do Projeto:** Website Portfolio
 
-**Cliente:** 
+**Tipo:** Pessoal 
 
-**Identificador do Aplicativo:** 
+**Última Versão Lançada:**  Em desenvolvimento
 
-**Última Versão Lançada:**  
+**Versão em Desenvolvimento:** 0.0.0
 
-**Versão em Desenvolvimento:** 
+**Descrição:** Meu site de portfólio.
 
-**Descrição:** 
-
-**Stakeholders:**
-
-**Usuários:** 
-
-**Principais Tecnologias:**
+**Principais Tecnologias:** React, typescript, github, actions
 
 
 

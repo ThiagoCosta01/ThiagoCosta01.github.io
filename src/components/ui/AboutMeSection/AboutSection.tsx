@@ -1,62 +1,46 @@
+import { useLanguage } from "../../../context/LanguageContext";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
+    const { t } = useLanguage();
+
     return (
         <section className={styles.container}>
             <div className={styles.content}>
 
                 <div className={styles.cardsContainer}>
                     <div className={styles.card}>
-                        <h3>Back-End</h3>
-                        <p>
-                            Desenvolvimento de APIs, microsserviços e integrações
-                            corporativas.
-                        </p>
-                        <span>4+ ANOS</span>
+                        <h3>{t.aboutMeSection.backendCard.title}</h3>
+                        <p>{t.aboutMeSection.backendCard.description}</p>
+                        <span>{t.aboutMeSection.backendCard.subtitle}</span>
                     </div>
 
                     <div className={styles.card}>
-                        <h3>Infraestrutura</h3>
-                        <p>
-                            Docker, Linux, CI/CD e automação de ambientes.
-                        </p>
-                        <span>DEVOPS</span>
+                        <h3>{t.aboutMeSection.InfrastructureCard.title}</h3>
+                        <p>{t.aboutMeSection.InfrastructureCard.description}</p>
+                        <span>{t.aboutMeSection.InfrastructureCard.subtitle}</span>
                     </div>
 
                     <div className={styles.card}>
-                        <h3>Arquitetura</h3>
-                        <p>
-                            Sistemas escaláveis e soluções para ambientes críticos.
-                        </p>
-                        <span>SOFTWARE</span>
+                        <h3>{t.aboutMeSection.architectureCard.title}</h3>
+                        <p>{t.aboutMeSection.architectureCard.description}</p>
+                        <span>{t.aboutMeSection.architectureCard.subtitle}</span>
                     </div>
                 </div>
 
                 <div className={styles.textContent}>
-                    <span className={styles.label}>Sobre Mim</span>
+                    <span className={styles.label}>{t.aboutMeSection.sectionName}</span>
 
-                    <h2>
-                        Desenvolvedor de Software
-                        <br />
-                        Full Stack
-                    </h2>
+                    <h2>{t.aboutMeSection.title}</h2>
 
-                    <h3>
-                        Transformando requisitos complexos em soluções simples e
-                        escaláveis.
-                    </h3>
+                    <h3>{t.aboutMeSection.subtitle}</h3>
 
                     <p>
-                        Tenho mais de 4 anos de experiência atuando em sistemas
-                        corporativos, automação de processos e infraestrutura.
-                        Trabalho em todo o ciclo de desenvolvimento, desde o
-                        levantamento de requisitos até deploy e monitoramento.
+                        {t.aboutMeSection.text}
                     </p>
 
                     <p>
-                        Minha principal experiência está em Java, Spring Boot,
-                        Node.js, Docker, Linux e integração de sistemas
-                        empresariais.
+                        {t.aboutMeSection.text2}
                     </p>
                 </div>
             </div>

@@ -10,6 +10,7 @@ export default function Navbar() {
     const { t } = useLanguage();
 
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,35 +24,64 @@ export default function Navbar() {
         };
     }, []);
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <nav
-            className={`${styles.navbar} ${scrolled ? styles.scrolled : ""
-                }`}
+            className={`${styles.navbar} ${
+                scrolled ? styles.scrolled : ""
+            }`}
         >
-            <div className={`${styles.container}`}>
+            <div className={styles.container}>
                 <div className={styles.logo}>
                     <Logo mode="full" />
                 </div>
 
-                <ul className={styles.menu}>
+                <button
+                    className={styles.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle navigation"
+                >
+                    <span />
+                    <span />
+                    <span />
+                </button>
+
+                <ul
+                    className={`${styles.menu} ${
+                        menuOpen ? styles.menuOpen : ""
+                    }`}
+                >
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={closeMenu}>
+                            Home
+                        </Link>
                     </li>
 
                     <li>
-                        <Link to="/about">{t.navbar.about}</Link>
+                        <Link to="/about" onClick={closeMenu}>
+                            {t.navbar.about}
+                        </Link>
                     </li>
 
                     <li>
-                        <Link to="/projects">{t.navbar.projects}</Link>
+                        <Link to="/projects" onClick={closeMenu}>
+                            {t.navbar.projects}
+                        </Link>
                     </li>
 
                     <li>
-                        <Link to="/certifications">{t.navbar.certifications}</Link>
+                        <Link to="/certifications" onClick={closeMenu}>
+                            {t.navbar.certifications}
+                        </Link>
                     </li>
 
                     <li>
-                        <Link to="/contact">{t.navbar.contact}</Link>
+                        <Link to="/contact" onClick={closeMenu}>
+                            {t.navbar.contact}
+                        </Link>
                     </li>
 
                     <li>

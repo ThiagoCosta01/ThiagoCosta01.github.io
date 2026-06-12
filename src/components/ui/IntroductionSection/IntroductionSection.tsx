@@ -1,6 +1,6 @@
 import { useLanguage } from "../../../context/LanguageContext";
-import styles from "./IntroductionSection.module.css"
-import developerImage from "../../../assets/images/developer.png";
+import styles from "./IntroductionSection.module.css";
+import meImage from "../../../assets/images/me2.png";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import { GeneralIcons } from "../../../config/GeneralIcons";
 
@@ -21,40 +21,60 @@ export default function IntroductionSection() {
                             {t.introductionSection.name}
                         </h1>
 
+                        <div className={styles.stack}>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Docker</span>
+                            <span>MySQL</span>
+                            <span>React</span>
+                        </div>
+
                         <p>
                             {t.introductionSection.text}
                         </p>
 
-                    <div className={styles.actions}>
-                        <a href="#projects">
-                            <PrimaryButton
-                                text="Ver Projetos"
-                                href="#ProjectsList"
-                                target="_self"
-                                icon={<GeneralIcons.down />}
-                            />
-                        </a>
+                        <div className={styles.actions}>
 
-                        <a
-                            href="/curriculo.pdf"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
                             <PrimaryButton
                                 text="Download CV"
                                 bgColor="transparent"
                                 textColor="var(--primary-color)"
                                 borderColor="var(--primary-color)"
                                 href={t.curriculum.link}
-                                icon={<GeneralIcons.donwload
-
-                                />}
+                                icon={<GeneralIcons.donwload />}
                             />
-                        </a>
+
+                            <PrimaryButton
+                                text={t.buttons.seeProjects}
+                                href="#ProjectsList"
+                                target="_self"
+                                icon={<GeneralIcons.down />}
+                            />
+
+                        </div>
                     </div>
+
+                    <div className={styles.picture}>
+                        <img src={meImage} alt="" />
                     </div>
-                    <div>
-                        <img src={developerImage} alt="" />
+
+                    <div className={styles.terminal}>
+                        <div className={styles.terminalHeader}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <code>
+                            $ java --version<br />
+                            Java 21<br /><br />
+
+                            $ docker ps<br />
+                            running ✓<br /><br />
+
+                            $ spring-boot run<br />
+                            started ✓
+                        </code>
                     </div>
                 </div>
             </div>

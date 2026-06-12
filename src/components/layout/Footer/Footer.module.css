@@ -1,57 +1,262 @@
 .footer {
-    margin-top: 8rem;
-
-    border-top: 1px solid rgba(255,255,255,0.08);
-
-    background-color: var(--footer);
+    background: #111;
+    color: #fff;
+    border-top: 1px solid #222;
 }
 
-.container {
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 5rem 2rem;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.profileTitle::before {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 2px;
+
+    background: #fff;
+
+    margin-bottom: 1rem;
+}
+
+.profileRole {
+    color: #999;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.profileDescription {
+    max-width: 500px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.availability {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333;
+    border-radius: 50%;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.socialIcon:hover {
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.linksArea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 500px) {
+    .linksArea {
+        grid-template-columns: 1fr;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.colTitle {
+    margin: 0 0 1.25rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+    color: #fff;
+}
+
+.colList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.colLink {
+    text-decoration: none;
+    color: #999;
+    transition: color 0.2s ease;
+}
+
+.colLink:hover {
+    color: #fff;
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.techBadge {
+    border: 1px solid #333;
+
+    padding: 0.45rem 0.9rem;
+
+    border-radius: 999px;
+
+    font-size: 0.8rem;
+
+    color: #ddd;
+
+    transition: all 0.2s ease;
+}
+
+.techBadge:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.bottomBar {
     max-width: 1200px;
 
     margin: 0 auto;
 
-    padding: 3rem 1rem;
+    padding: 1.5rem 2rem;
+
+    border-top: 1px solid #222;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
-    gap: 2rem;
-
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.info p {
-    color: var(--text-secondary);
+@media (max-width: 600px) {
+    .bottomBar {
+        flex-direction: column;
+    }
 }
 
-.links {
-    display: flex;
-
-    gap: 1.5rem;
+.copyright {
+    color: #777;
+    font-size: 0.8rem;
 }
 
-.links a {
-    color: var(--text-secondary);
+.backToTop {
+    color: #fff;
+    text-decoration: none;
 
-    transition: 0.2s ease;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
 }
 
-.links a:hover {
-    color: var(--text-primary);
+.backToTop:hover {
+    opacity: 0.7;
 }
 
-.bottom {
-    text-align: center;
+/* Tablets pequenos */
+@media (max-width: 768px) {
+    .linksArea {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 
-    padding: 1rem;
+    .column {
+        width: 100%;
+    }
+}
 
-    border-top: 1px solid rgba(255,255,255,0.05);
+/* Mobile */
+@media (max-width: 480px) {
+    .inner {
+        padding: 4rem 1.5rem;
+        gap: 3rem;
+    }
 
-    color: var(--text-secondary);
+    .profileTitle {
+        font-size: 1.75rem;
+    }
 
-    font-size: 0.9rem;
+    .profileDescription {
+        max-width: 100%;
+    }
+
+    .colList {
+        gap: 1rem;
+    }
+
+    .colLink {
+        font-size: 0.95rem;
+    }
+
+    .techList {
+        gap: 0.5rem;
+    }
+
+    .techBadge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .bottomBar {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .colList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }

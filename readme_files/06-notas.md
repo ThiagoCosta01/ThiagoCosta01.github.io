@@ -6,4 +6,4 @@
 
 ## Conteúdo
 
-- 02/10/2025 - Thiago Costa - Nota inicial de exemplo
+- 02/06/2026 - Thiago Costa - Nota inicial de exemplo

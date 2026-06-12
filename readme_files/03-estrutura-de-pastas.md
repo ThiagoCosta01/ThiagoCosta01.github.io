@@ -4,9 +4,9 @@
 
 ```
 Project-Root/
-├─ apps/ # Aplicativos do Repositório
-├─ docs/ # Documentação do Repositório
-├─ infra/ # Arquivos de configuração, preparação do ambiente e scripts de apoio
+├─ src/ # Aplicativo do Repositório
+├─ docs/ # dist 
+├─ readme_files/ # Documentação do Repositório
 ├─ .github/workflows/ # Scripts de CI/CD
 ├─ .gitignore # Arquivos a serem ignorados em todos commits
 ├─ README.md # Documentação integral feita a partir dos arquivos de /docs

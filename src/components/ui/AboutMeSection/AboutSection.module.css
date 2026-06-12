@@ -14,6 +14,8 @@
 }
 
 .content {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     width: 85%;
     justify-content: space-between;
@@ -103,4 +105,85 @@
     opacity: 0.75;
 
     margin-bottom: 1.5rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .content {
+        width: 90%;
+        gap: 3rem;
+    }
+
+    .textContent h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        width: 90%;
+        gap: 3rem;
+    }
+
+    .cardsContainer {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .card {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .textContent {
+        width: 100%;
+    }
+
+    .textContent h2 {
+        font-size: 2.5rem;
+    }
+
+    .textContent h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .content {
+        width: 92%;
+        gap: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .textContent h2 {
+        font-size: 2rem;
+    }
+
+    .textContent h3 {
+        font-size: 1rem;
+    }
+
+    .textContent p {
+        line-height: 1.7;
+    }
+
+    .label {
+        font-size: 0.75rem;
+    }
 }

@@ -1,17 +1,16 @@
 import Home from '../pages/Home/Home'
-import About from '../pages/About'
-import Projects from '../pages/Projects'
-import Contact from '../pages/Contact'
 import { Route, Routes } from 'react-router-dom'
+import UnderConstruction from '../pages/UnderConstruction/UnderConstruction'
 
 export default function Router() {
   return (
       <Routes>
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<UnderConstruction />} />
+        <Route path="/projects" element={<UnderConstruction />} />
+        <Route path="/contact" element={<UnderConstruction />} />
+        <Route path="/certifications" element={<UnderConstruction />} />
       </Routes>
   )
 }

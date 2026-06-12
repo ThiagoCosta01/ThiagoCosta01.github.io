@@ -1,12 +1,55 @@
 export const pt = {
+  general: {
+    myName: "Thiago Costa",
+    myDescription: "Software Developer",
+    projects: "Projetos",
+  },
+
   introductionSection: {
     introText: "Olá, me chamo",
     name: "Thiago Costa",
-    text: "Desenvolvedor de Software especializado em aplicações corporativas, automação e integração de sistemas. Transformo requisitos complexos em soluções escaláveis utilizando Java, Spring Boot, Node.js, React, Docker e práticas modernas de DevOps.",
+    text: "Desenvolvedor Backend especializado em aplicações corporativas, microsserviços e automação de processos.",
+  },
+
+  aboutMeSection: {
+    sectionName: "Sobre Mim",
+    title: "Desenvolvedor de Software Full Stack",
+    subtitle: "Transformando requisitos complexos em soluções simples e escaláveis.",
+    text: "Tenho mais de 4 anos de experiência atuando em sistemas corporativos, automação de processos e infraestrutura. Trabalho em todo o ciclo de desenvolvimento, desde o levantamento de requisitos até deploy e monitoramento.",
+    text2: "Minha principal experiência está em Java, Spring Boot, Node.js, Docker, Linux e integração de sistemas empresariais.",
+    backendCard: {
+      title: "Back-End",
+      description: "Desenvolvimento de APIs, microsserviços e integrações corporativas.",
+      subtitle: "4+ ANOS"
+    },
+    InfrastructureCard: {
+      title: "Infraestrutura",
+      description: "Docker, Linux, CI/CD e automação de ambientes.",
+      subtitle: "DEVOPS"
+    },
+    architectureCard: {
+      title: "Arquitetura",
+      description: "Sistemas escaláveis e soluções para ambientes críticos.",
+      subtitle: "SOFTWARE"
+    },
+  },
+
+  skillsSection: {
+    sectionName: "Stack Tecnológica",
+    title: "Tecnologias e Ferramentas",
+    subtitle: "Experiência no desenvolvimento de aplicações web, sistemas corporativos, APIs REST e automação de processos utilizando tecnologias modernas do ecossistema Java e JavaScript.",
+  },
+
+  underConstruction: {
+    text: "Desculpe, site em desenvolvimento!"
   },
 
   curriculum: {
-    link: "https://drive.google.com/uc?export=download&id=1VBZ6W-KppgPfYl5JmngfqMSfbWLMaYCQ&utm_source=chatgpt.com"
+    link: "https://drive.google.com/uc?export=download&id=1VBZ6W-KppgPfYl5JmngfqMSfbWLMaYCQ"
+  },
+
+  buttons: {
+    seeProjects: "Projetos",
   },
 
   navbar: {
@@ -17,17 +60,26 @@ export const pt = {
     certifications: "Certificações"
   },
 
-  projects: {
+  footer: {
+    main: {
+      text: "Desenvolvendo APIs escaláveis, soluções de automação e sistemas corporativos com Java, Spring Boot, Node.js e Docker.",
+      secondaryText: "Disponível para novas oportunidades.",
+    },
+    stack: "PRINCIPAIS TECNOLOGIAS",
+    backToTop: "VOLTAR AO TOPO",
+    navigation: "Navegação"
+  },
 
+  projects: {
     "cronos": {
       title: "Cronos",
       subtitle: "Projeto Corporativo Privado",
-      description: "Marcador de Tempo"
+      description: "Sistema desktop de monitoramento de tempo e produtividade dos usuários."
     },
     "sci": {
-      title: "SCI",
-      subtitle: "Sistema de Controle Integrado",
-      description: "GED de Engenharia"
+      title: "SCI - Sistema de Controle Integrado",
+      subtitle: "Projeto Corporativo Privado",
+      description: "GED de engenharia responsável pelo gerenciamento, versionamento e rastreabilidade de documentos."
     },
     "icone-website": {
       title: "Portal Institucional da Icone Consultoria e Engenharia",
@@ -48,7 +100,11 @@ export const pt = {
       title: "SSO",
       subtitle: "Projeto Corporativo Privado",
       description: "Site desenvolvido com React e TypeScript"
+    },
+    "iinvent": {
+      title: "IInvent",
+      subtitle: "Private Project",
+      description: "Site desenvolvido com Java e MySQL"
     }
-
   }
 };

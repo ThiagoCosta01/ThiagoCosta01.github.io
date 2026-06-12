@@ -1,11 +1,21 @@
 # Pendentes
-[] - Seção de skills
-[] - Melhor intro section
+
 [] - Organizar projetos
-[] - Atualizar footer
-[] - Versão inglês
-[] - Página de "Em construção"
-[] - Versão mobile
-[] - Email proton
+
+[] - Cmd em movimento
 
 ## Feitos
+
+[ x ] - Atualizar footer
+
+[ x ] - Página de "Em construção"
+
+[ x ] - Melhorar intro section
+
+[ x ] - Versão mobile
+
+[ x ] - Melhorar navbar
+
+[ x ] - Seção de skills
+
+[ x ] - Currículo Inglês
