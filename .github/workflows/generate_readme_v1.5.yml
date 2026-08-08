@@ -9,7 +9,7 @@ on:
   push:
     branches-ignore:
       - main
-      - develop
+      - master
     paths:
       - 'readme_files/**'
   workflow_dispatch:

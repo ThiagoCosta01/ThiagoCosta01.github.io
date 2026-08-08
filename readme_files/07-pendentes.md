@@ -1,10 +1,10 @@
 # Pendentes
 
-[] - Organizar projetos
-
 [] - Cmd em movimento
 
 ## Feitos
+
+[ x ] - Organizar projetos
 
 [ x ] - Atualizar footer
 

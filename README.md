@@ -1,13 +1,17 @@
 
 # Visão Geral do Sistema
 
+<p align="center">
+  <img src="src\assets\images\portfolio.png" width="500">
+</p>
+
 **Nome do Projeto:** Website Portfolio
 
 **Tipo:** Pessoal 
 
-**Última Versão Lançada:**  Em desenvolvimento
+**Última Versão Lançada:**  0.0.2
 
-**Versão em Desenvolvimento:** 0.0.0
+**Versão em Desenvolvimento:** 0.0.3
 
 **Descrição:** Meu site de portfólio.
 

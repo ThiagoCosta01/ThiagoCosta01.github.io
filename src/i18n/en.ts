@@ -72,41 +72,43 @@ export const en = {
     navigation: "Navigation"
   },
 
+
   projects: {
     "cronos": {
       title: "Cronos",
-      subtitle: "Private Project",
-      description: "Marcador de Tempo"
+      subtitle: "Private Corporate Project",
+      description: "Desktop system for monitoring users' time and productivity."
     },
     "sci": {
-      title: "SCI",
-      subtitle: "Sistema de Controle Integrado",
-      description: "GED de Engenharia"
+      title: "SCI - Sistema de Controle Integrado",
+      subtitle: "Private Corporate Project",
+      description: "DMS for managing engineering documents, with document versioning and traceability."
     },
     "icone-website": {
       title: "Portal Institucional da Icone Consultoria e Engenharia",
-      subtitle: "Website",
-      description: "Site desenvolvido com Angular"
+      subtitle: "Corporate Website",
+      description: "Landing page for Icone - Inoue, an engineering consulting firm."
     },
     "kataink": {
       title: "KataInk",
-      subtitle: "Projeto Pessoal",
-      description: "Site desenvolvido com React e TypeScript"
+      subtitle: "University Project",
+      description: "Web application for learning Katakana through handwriting practice."
     },
     "personal-website": {
-      title: "Portfolio",
-      subtitle: "Personal Website",
-      description: "Site desenvolvido com React e TypeScript"
+      title: "Personal Portfolio",
+      subtitle: "Website",
+      description: "Personal portfolio website hosted on AWS and GitHub Pages."
     },
     "keycloak": {
       title: "SSO",
-      subtitle: "Private Project",
-      description: "Site desenvolvido com React e TypeScript"
+      subtitle: "Private Corporate Project",
+      description: "Single Sign-On (SSO) solution for user authentication and authorization using Keycloak."
     },
     "iinvent": {
       title: "IInvent",
-      subtitle: "Private Project",
-      description: "Site desenvolvido com Java e MySQL"
+      subtitle: "Private Corporate Project",
+      description: "Inventory management and stock control system for businesses."
     }
   }
+
 };

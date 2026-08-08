@@ -9,3 +9,6 @@
 
 3. **Enviar para github pages**
 - npm run deploy
+
+## Observação
+- push/merge na branch principal envia build para s3 e gh pages.

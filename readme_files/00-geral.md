@@ -1,5 +1,9 @@
 # Visão Geral do Sistema
 
+<p align="center">
+  <img src="src\assets\images\portfolio.png" width="500">
+</p>
+
 **Nome do Projeto:** Website Portfolio
 
 **Tipo:** Pessoal 

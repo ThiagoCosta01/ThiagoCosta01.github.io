@@ -9,6 +9,20 @@ import iinventPicture from "../assets/images/iinvent.png";
 
 export const projects: Project[] = [
     {
+        id: "kataink",
+        picture: katainkPicture,
+        technologies: ["react", "typescript"],
+        link: "https://thiagocosta01.github.io/kataink/",
+    },
+    
+    {
+        id: "personal-website",
+        picture: portfolioPicture,
+        technologies: ["react", "typescript"],
+        link: "https://github.com/ThiagoCosta01/ThiagoCosta01.github.io",
+    },
+
+    {
         id: "cronos",
         picture: cronosPicture,
         technologies: ["springboot", "csharp", "mysql", "wpf"],
@@ -22,20 +36,6 @@ export const projects: Project[] = [
         link: "https://www.controle.net/faq/ged-o-que-e-gestao-eletronica-de-documentos",
     },
 
-    
-    {
-        id: "kataink",
-        picture: katainkPicture,
-        technologies: ["react", "typescript"],
-        link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEx0on_T6hjB_lGymJDAnePR28HhPAL_21EQ&s",
-    },
-    
-    {
-        id: "personal-website",
-        picture: portfolioPicture,
-        technologies: ["react", "typescript"],
-        link: "https://github.com/ThiagoCosta01/ThiagoCosta01.github.io",
-    },
     {
         id: "icone-website",
         picture: iconeWebsitePicture,

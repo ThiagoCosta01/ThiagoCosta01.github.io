@@ -8,7 +8,7 @@ export const pt = {
   introductionSection: {
     introText: "Olá, me chamo",
     name: "Thiago Costa",
-    text: "Desenvolvedor Backend especializado em aplicações corporativas, microsserviços e automação de processos.",
+    text: "Desenvolvedor de Software especializado em aplicações corporativas, backend e automação de processos.",
   },
 
   aboutMeSection: {
@@ -79,32 +79,32 @@ export const pt = {
     "sci": {
       title: "SCI - Sistema de Controle Integrado",
       subtitle: "Projeto Corporativo Privado",
-      description: "GED de engenharia responsável pelo gerenciamento, versionamento e rastreabilidade de documentos."
+      description: "GED para gerenciamento de documentos de engenharia, com versionamento e rastreabilidade de documentos."
     },
     "icone-website": {
       title: "Portal Institucional da Icone Consultoria e Engenharia",
       subtitle: "Website Corporativo",
-      description: "Site desenvolvido com Angular"
+      description: "Landing page da consultoria de engenharia Icone - Inoue."
     },
     "kataink": {
       title: "KataInk",
-      subtitle: "Projeto Pessoal",
-      description: "Site desenvolvido com React e TypeScript"
+      subtitle: "Projeto de Faculdade",
+      description: "Aplicação web para aprendizagem de katakana através da escrita manual."
     },
     "personal-website": {
       title: "Portfólio pessoal",
       subtitle: "Website",
-      description: "Site desenvolvido com React e TypeScript"
+      description: "Meu site pessoal de portfólio hospedado na AWS e no GitHub Pages."
     },
     "keycloak": {
       title: "SSO",
       subtitle: "Projeto Corporativo Privado",
-      description: "Site desenvolvido com React e TypeScript"
+      description: "SSO de autenticação e autorização de usuários utilizando Keycloak."
     },
     "iinvent": {
       title: "IInvent",
-      subtitle: "Private Project",
-      description: "Site desenvolvido com Java e MySQL"
+      subtitle: "Projeto Corporativo Privado",
+      description: "Sistema de gerenciamento de inventário e controle de estoque para empresas."
     }
   }
 };
