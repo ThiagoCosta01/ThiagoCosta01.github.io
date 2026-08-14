@@ -3,6 +3,7 @@ import styles from "./IntroductionSection.module.css";
 import meImage from "../../../assets/images/me2.png";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import { GeneralIcons } from "../../../config/GeneralIcons";
+import TerminalAnimation from "../TerminalAnimation/TerminalAnimation";
 
 export default function IntroductionSection() {
     const { t } = useLanguage();
@@ -59,22 +60,7 @@ export default function IntroductionSection() {
                     </div>
 
                     <div className={styles.terminal}>
-                        <div className={styles.terminalHeader}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <code>
-                            $ java --version<br />
-                            Java 21<br /><br />
-
-                            $ docker ps<br />
-                            running ✓<br /><br />
-
-                            $ spring-boot run<br />
-                            started ✓
-                        </code>
+                        <TerminalAnimation />
                     </div>
                 </div>
             </div>

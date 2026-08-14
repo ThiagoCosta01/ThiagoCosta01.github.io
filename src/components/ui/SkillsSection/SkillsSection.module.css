@@ -1,22 +1,28 @@
 .container {
   width: 100%;
-  padding: 120px 5%;
+  padding-bottom: 120px;
+  padding-top: 120px;
   background-color: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
-  grid-template-columns: 450px 1fr;
-  gap: 5rem;
+
+
   align-items: center;
   justify-content: center;
+  gap: 10rem;
+  width: 80%;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .tag {

@@ -1,5 +1,7 @@
 :root {
   --background: #0A0A0A;
+  --background-secondary: rgba(0, 0, 255, 0.22);
+  
 
   --surface: #111111;
   --surface-hover: #371e3b;

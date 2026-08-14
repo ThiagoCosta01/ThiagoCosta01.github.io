@@ -1,5 +1,6 @@
 .container a{
     color: var(--primary);
+    font-weight: 600;
 }
 
 .container a:hover{
