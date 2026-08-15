@@ -8,7 +8,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .sectionHeader {
@@ -25,7 +25,7 @@
   gap: 1rem;
 }
 
-.sectionTitle {
+.sectionTitle h2 {
   margin: 0;
 
   font-size: clamp(2rem, 4vw, 3rem);

@@ -4,6 +4,11 @@ export type Project = {
     subtitle?: string;
     description?: string;
     picture?: string;
-    technologies?: string[];
+    repositoryURL?: string;
+    hostedURL?: string;
+    imageURL?: string;
+    otherURL?: string;
     link?: string;
+    isFinished?: boolean;
+    technologies?: string[];
 };

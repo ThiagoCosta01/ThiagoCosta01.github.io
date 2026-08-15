@@ -23,9 +23,10 @@ export default function ProjectsList() {
             <div className={styles.content}>
 
                 <div className={styles.sectionHeader}>
-                    <h2 className={styles.sectionTitle}>
-                        {t.general.projects}
-                    </h2>
+                    <div className={styles.sectionTitle}>
+                        <h2>{t.general.projects}</h2>
+                        <h3>{t.general.finishedProjects}</h3>
+                    </div>
 
                     <div className={styles.rightSection}>
                         <span className={styles.projectCount}>
@@ -45,12 +46,13 @@ export default function ProjectsList() {
                                 className={styles.arrowButton}
                                 onClick={scrollNext}
                                 aria-label="Próximo projeto"
-                                
+
                             >
                                 <GeneralIcons.right color="var(--text)" size={18} />
                             </button>
                         </div>
                     </div>
+                
                 </div>
 
 
@@ -74,13 +76,17 @@ export default function ProjectsList() {
                                         picture={project.picture}
                                         technologies={project.technologies}
                                         link={project.link}
+                                        repositoryURL={project.repositoryURL}
+                                        hostedURL={project.hostedURL}
+                                        imageURL={project.imageURL}
+                                        otherURL={project.otherURL}
                                     />
                                 </div>
                             );
                         })}
                     </div>
                 </div>
-
+                
             </div>
         </section>
     );

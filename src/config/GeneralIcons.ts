@@ -1,8 +1,10 @@
-import { FaEye, FaGithub, FaLinkedin, FaEnvelope, } from "react-icons/fa";
-import { AiFillMoon } from "react-icons/ai";
+import { FaEye, FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkSquareAlt  } from "react-icons/fa";
+import { AiFillMoon, AiFillPicture  } from "react-icons/ai";
 import { PiSunHorizonFill } from "react-icons/pi";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { FaAnglesDown, FaComputer  } from "react-icons/fa6";
+import { GoProjectSymlink } from "react-icons/go";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
 
 
@@ -18,5 +20,8 @@ export const GeneralIcons = {
     github: FaGithub,
     linkedin: FaLinkedin,
     envelope: FaEnvelope,
-
+    picture: AiFillPicture,
+    externalLink: FaExternalLinkSquareAlt,
+    externalLink2: LiaExternalLinkAltSolid,
+    externalLink3: GoProjectSymlink,
 }

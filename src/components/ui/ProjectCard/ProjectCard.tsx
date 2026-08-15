@@ -10,8 +10,13 @@ export default function ProjectCard({
     description,
     picture,
     technologies,
+    subtitle,
     link,
-    subtitle
+    repositoryURL,
+    hostedURL,
+    imageURL,
+    otherURL,
+    
 }: ProjectCardProps) {
     return (
         <div className={styles.container}>
@@ -34,17 +39,61 @@ export default function ProjectCard({
                     </div>
 
                 </div>
-                
+
                 <div className={`${styles.icons}`}>
-                    <div className={styles.showProject}>
-                        <GeneralIcons.eye />
+                    <div className={styles.showProjectLinks}>
+
+                        {hostedURL && (
+                            <a
+                                href={hostedURL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Live Website"
+                            >
+                                <GeneralIcons.externalLink />
+                            </a>
+                        )}
+
+                        {repositoryURL && (
+                            <a
+                                href={repositoryURL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Repo"
+                            >
+                                <GeneralIcons.github />
+                            </a>
+                        )}
+
+                        {imageURL && (
+                            <a
+                                href={imageURL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Image"
+                            >
+                                <GeneralIcons.picture />
+                            </a>
+                        )}
+
+                        {otherURL && (
+                            <a
+                                href={otherURL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Live Website"
+                            >
+                                <GeneralIcons.externalLink3 />
+                            </a>
+                        )}
+
                     </div>
 
                     <div className={styles.technologies}>
                         {technologies?.map((tech) => {
                             const Icon = techIcons[tech as keyof typeof techIcons];
 
-                            return Icon ? <Icon key={tech} /> : null;
+                            return Icon ? <Icon key={tech} className={styles.technology} title={tech} /> : null;
                         })}
                     </div>
 

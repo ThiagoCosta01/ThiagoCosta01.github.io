@@ -3,6 +3,8 @@ export const en = {
     myName: "Thiago Costa",
     myDescription: "Software Developer",
     projects: "Projects",
+    finishedProjects: "Finished",
+    ongoingProjects: "Ongoing",
   },
 
   introductionSection: {

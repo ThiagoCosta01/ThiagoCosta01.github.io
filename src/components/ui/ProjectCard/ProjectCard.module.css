@@ -117,20 +117,28 @@
 .technologies svg {
 
   transition: transform 0.4s ease, color 0.2s ease;
+
 }
 
 .technologies svg:hover {
-  transform: scale(1.2);
+  transform: scale(1.2);  
 }
 
-.showProject {
+
+.showProjectLinks {
   display: flex;
   align-items: end;
   justify-content: end;
   transition: transform 0.2s ease, color 0.2s ease;
+  gap: 0.75rem;
 }
 
-.showProject:hover {
+.showProjectLinks:hover {
+
+  transform: scale(1.1);
+}
+
+.showProjectLinks a:hover {
   color: var(--primary);
   transform: scale(1.1);
 }

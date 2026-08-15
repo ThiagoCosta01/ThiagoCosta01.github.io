@@ -3,6 +3,8 @@ export const pt = {
     myName: "Thiago Costa",
     myDescription: "Software Developer",
     projects: "Projetos",
+    finishedProjects: "Concluídos",
+    ongoingProjects: "Em Andamento",
   },
 
   introductionSection: {
@@ -36,7 +38,7 @@ export const pt = {
 
   skillsSection: {
     sectionName: "Stack Tecnológica",
-    title: "Tecnologias e Ferramentas",
+    title: "Tecnologias & Ferramentas",
     subtitle: "Experiência no desenvolvimento de aplicações web, sistemas corporativos, APIs REST e automação de processos utilizando tecnologias modernas do ecossistema Java e JavaScript.",
   },
 
