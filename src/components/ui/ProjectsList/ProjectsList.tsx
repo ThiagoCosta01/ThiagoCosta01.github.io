@@ -63,10 +63,7 @@ export default function ProjectsList() {
                                 project.id as keyof typeof t.projects;
 
                             return (
-                                <div
-                                    className={styles.emblaSlide}
-                                    key={project.id}
-                                >
+                                <div className={styles.emblaSlide} key={project.id}>
                                     <ProjectCard
                                         title={t.projects[keyCast].title}
                                         subtitle={t.projects[keyCast].subtitle}

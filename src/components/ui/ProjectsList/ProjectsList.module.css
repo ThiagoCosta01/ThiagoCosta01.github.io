@@ -65,12 +65,13 @@
 
 .emblaContainer {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .emblaSlide {
   flex: 0 0 340px;
   min-width: 0;
+ 
 }
 
 @media (max-width: 768px) {
@@ -112,7 +113,9 @@
     margin-left: auto;
   }
 
-  .emblaSlide {
-    flex: 0 0 92%;
+
+
+  .emblaContainer {
+    gap: 0.75rem;
   }
 }

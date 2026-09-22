@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className={styles.linksArea}>
                     <div className={styles.column}>
                         <h3 className={styles.colTitle}>
-                            NAVIGATION
+                            {t.footer.navigation}
                         </h3>
 
                         <ul className={styles.colList}>

@@ -69,7 +69,7 @@ export const pt = {
     },
     stack: "PRINCIPAIS TECNOLOGIAS",
     backToTop: "VOLTAR AO TOPO",
-    navigation: "Navegação"
+    navigation: "NAVEGAÇÃO",
   },
 
   projects: {

@@ -1,3 +1,10 @@
 .button {
     color: var(--text);
+    transition: opacity .2s ease;
+}
+
+.button:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
 }

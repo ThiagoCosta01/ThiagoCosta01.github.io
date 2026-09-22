@@ -69,9 +69,9 @@ export const en = {
       text: "Building scalable APIs, automation solutions and enterprise systems with Java, Spring Boot, Node.js and Docker.",
       secondaryText: "Open to new opportunities.",
     },
+    navigation: "NAVIGATION",
     stack: "MAIN STACK",
     backToTop: "BACK TO TOP",
-    navigation: "Navigation"
   },
 
 
