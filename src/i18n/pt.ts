@@ -1,3 +1,5 @@
+import type { CertificationId } from "../types/Certification";
+
 export const pt = {
   seo: {
     title: "Thiago Costa | Desenvolvedor Backend e Fullstack",
@@ -24,7 +26,7 @@ export const pt = {
   pages: {
     about: { eyebrow: "Sobre mim", title: "Engenharia de software com visão de produto", intro: "Atuo na interseção entre backend, infraestrutura e experiência do usuário, buscando entregar soluções que funcionem bem em produção e sejam sustentáveis para o time.", experienceTitle: "Como posso contribuir", points: ["Construção de APIs REST, integrações e regras de negócio", "Automação de processos e ambientes com Docker, Linux e CI/CD", "Colaboração com produto e levantamento de requisitos", "Monitoramento, manutenção e evolução de sistemas corporativos"], cta: "Ver projetos" },
     projects: { eyebrow: "Projetos", title: "Problemas reais, soluções aplicáveis", intro: "Uma seleção de projetos acadêmicos, corporativos e pessoais que mostra minha atuação em backend, integração, infraestrutura e desenvolvimento fullstack.", privateNote: "Alguns projetos são privados. Nesses casos, apresento o contexto e a contribuição técnica sem expor informações confidenciais." },
-    certifications: { eyebrow: "Certificações", title: "Aprendizado contínuo", intro: "Esta seção será atualizada conforme novas certificações e formações forem adicionadas. Enquanto isso, minha experiência prática está refletida nos projetos e sistemas apresentados neste portfólio.", cta: "Conhecer projetos" },
+    certifications: { eyebrow: "Certificações", title: "Cursos e credenciais verificáveis", intro: "Formação complementar em backend, sistemas corporativos e comunicação técnica. A evidência prática continua nos projetos em produção.", cta: "Ver projetos", credential: "Ver certificado", issued: "Emitido em" },
     contact: { eyebrow: "Contato", title: "Vamos conversar sobre tecnologia", intro: "Estou aberto a oportunidades backend/fullstack e a conversas sobre APIs, sistemas corporativos, automação e arquitetura de software.", email: "Enviar e-mail", linkedin: "Conectar no LinkedIn", github: "Ver GitHub", cv: "Baixar currículo" },
   },
   underConstruction: { text: "Desculpe, site em desenvolvimento!" },
@@ -40,5 +42,10 @@ export const pt = {
     "personal-website": { title: "Portfólio pessoal", subtitle: "Website", description: "Meu site pessoal de portfólio hospedado na AWS e no GitHub Pages." },
     keycloak: { title: "SSO", subtitle: "Projeto Corporativo Privado", description: "SSO de autenticação e autorização de usuários utilizando Keycloak." },
     iinvent: { title: "IInvent", subtitle: "Projeto Corporativo Privado", description: "Sistema de gerenciamento de inventário e controle de estoque para empresas." },
-  }
+  },
+  credentials: {
+    "english-it": { title: "Inglês para Tecnologia da Informação", description: "Vocabulário e comunicação técnica para ambientes de desenvolvimento, suporte e documentação." },
+    "sap-abap": { title: "SAP ABAP Programming", description: "Fundamentos de ABAP para customização e relatórios em ambientes SAP corporativos." },
+    "clean-code-abap": { title: "Clean Code ABAP", description: "Práticas de código limpo aplicadas a ABAP: legibilidade, responsabilidade única e manutenção." },
+  } satisfies Record<CertificationId, { title: string; description: string }>,
 };
