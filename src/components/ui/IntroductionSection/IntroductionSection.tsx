@@ -6,64 +6,30 @@ import { GeneralIcons } from "../../../config/GeneralIcons";
 import TerminalAnimation from "../TerminalAnimation/TerminalAnimation";
 
 export default function IntroductionSection() {
-    const { t } = useLanguage();
-
-    return (
-        <>
-            <div className={styles.container}>
-                <div className={styles.content}>
-
-                    <div className={styles.texts}>
-                        <span className={styles.greeting}>
-                            {t.introductionSection.introText}
-                        </span>
-
-                        <h1>
-                            {t.introductionSection.name}
-                        </h1>
-
-                        <div className={styles.stack}>
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Docker</span>
-                            <span>MySQL</span>
-                            <span>React</span>
-                        </div>
-
-                        <p>
-                            {t.introductionSection.text}
-                        </p>
-
-                        <div className={styles.actions}>
-
-                            <PrimaryButton
-                                text="Download CV"
-                                bgColor="transparent"
-                                textColor="var(--primary-color)"
-                                borderColor="var(--primary-color)"
-                                href={t.curriculum.link}
-                                icon={<GeneralIcons.donwload />}
-                            />
-
-                            <PrimaryButton
-                                text={t.buttons.seeProjects}
-                                href="#ProjectsList"
-                                target="_self"
-                                icon={<GeneralIcons.down />}
-                            />
-
-                        </div>
-                    </div>
-
-                    <div className={styles.picture}>
-                        <img src={meImage} alt="" />
-                    </div>
-
-                    <div className={styles.terminal}>
-                        <TerminalAnimation />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+  const { t } = useLanguage();
+  return (
+    <section className={styles.container} aria-labelledby="hero-title">
+      <div className={styles.content}>
+        <div className={styles.texts}>
+          <span className={styles.greeting}>{t.introductionSection.introText}</span>
+          <span className={styles.eyebrow}>{t.introductionSection.eyebrow}</span>
+          <h1 id="hero-title">{t.introductionSection.name}</h1>
+          <div className={styles.stack} aria-label="Principais tecnologias">
+            {['Java', 'Spring Boot', 'Docker', 'Node.js', 'React'].map((item) => <span key={item}>{item}</span>)}
+          </div>
+          <p className={styles.description}>{t.introductionSection.text}</p>
+          <p className={styles.result}>{t.introductionSection.result}</p>
+          <ul className={styles.highlights}>
+            {t.introductionSection.highlights.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+          <div className={styles.actions}>
+            <PrimaryButton text={t.buttons.seeProjects} href="#ProjectsList" target="_self" icon={<GeneralIcons.down />} />
+            <PrimaryButton text={t.buttons.contact} href="/contact" target="_self" bgColor="transparent" textColor="var(--primary)" borderColor="var(--primary)" />
+          </div>
+        </div>
+        <div className={styles.picture}><img src={meImage} alt="Thiago Costa, desenvolvedor de software" /></div>
+        <div className={styles.terminal}><TerminalAnimation /></div>
+      </div>
+    </section>
+  );
 }

@@ -22,6 +22,7 @@ export default function ProjectsList() {
         <section id="ProjectsList" className={styles.container}>
             <div className={styles.content}>
 
+
                 <div className={styles.sectionHeader}>
                     <div className={styles.sectionTitle}>
                         <h2>{t.general.projects}</h2>
