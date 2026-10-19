@@ -1,8 +1,9 @@
 # Pendentes
 
-[] - Cmd em movimento
 
 ## Feitos
+
+[ x ] - Cmd em movimento
 
 [ x ] - Organizar projetos
 

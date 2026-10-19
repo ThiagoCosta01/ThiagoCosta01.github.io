@@ -1,116 +1,21 @@
 export const en = {
-  general: {
-    myName: "Thiago Costa",
-    myDescription: "Software Developer",
-    projects: "Projects",
-    finishedProjects: "Finished",
-    ongoingProjects: "Ongoing",
+  seo: { title: "Thiago Costa | Backend and Fullstack Developer", description: "Portfolio of Thiago Costa, a backend/fullstack developer working with Java, Spring Boot, Node.js, Docker, and enterprise systems." },
+  general: { myName: "Thiago Costa", myDescription: "Software Developer", projects: "Projects", finishedProjects: "Finished", ongoingProjects: "Ongoing" },
+  introductionSection: { introText: "Hello, I'm", name: "Thiago Costa", eyebrow: "Backend / Fullstack Developer", text: "I build reliable APIs, integrations, and automation for enterprise systems — from requirements gathering to deployment and monitoring.", result: "Over 4 years turning complex requirements into simple, scalable, and maintainable solutions.", highlights: ["APIs and microservices", "Enterprise integrations", "Docker, Linux, and CI/CD"] },
+  aboutMeSection: { sectionName: "About Me", title: "Full Stack Software Developer", subtitle: "Turning complex requirements into simple and scalable solutions.", text: "I have over 4 years of experience working with enterprise systems, process automation, and infrastructure. I am involved in the entire development lifecycle, from requirements gathering to deployment and monitoring.", text2: "My main expertise includes Java, Spring Boot, Node.js, Docker, Linux, and enterprise systems integration.", backendCard: { title: "Back-End", description: "Development of APIs, microservices, and enterprise integrations.", subtitle: "4+ YEARS" }, InfrastructureCard: { title: "Infrastructure", description: "Docker, Linux, CI/CD, and environment automation.", subtitle: "DEVOPS" }, architectureCard: { title: "Architecture", description: "Scalable systems and solutions for mission-critical environments.", subtitle: "SOFTWARE" } },
+  skillsSection: { sectionName: "Tech Stack", title: "Technologies & Tools", subtitle: "Experience building web applications, enterprise systems, RESTful APIs, and process automation solutions using modern Java and JavaScript technologies." },
+  pages: {
+    about: { eyebrow: "About me", title: "Software engineering with a product mindset", intro: "I work at the intersection of backend, infrastructure, and user experience, aiming to deliver solutions that perform well in production and remain sustainable for the team.", experienceTitle: "How I can contribute", points: ["REST APIs, integrations, and business rules", "Process and environment automation with Docker, Linux, and CI/CD", "Product collaboration and requirements discovery", "Monitoring, maintenance, and evolution of enterprise systems"], cta: "View projects" },
+    projects: { eyebrow: "Projects", title: "Real problems, applicable solutions", intro: "A selection of academic, corporate, and personal projects showing my work across backend, integration, infrastructure, and fullstack development.", privateNote: "Some projects are private. In those cases, I share the context and technical contribution without exposing confidential information." },
+    certifications: { eyebrow: "Certifications", title: "Continuous learning", intro: "This section will be updated as new certifications and training are added. In the meantime, my practical experience is reflected in the projects and systems presented in this portfolio.", cta: "Explore projects" },
+    contact: { eyebrow: "Contact", title: "Let's talk about technology", intro: "I am open to backend/fullstack opportunities and conversations about APIs, enterprise systems, automation, and software architecture.", email: "Send an email", linkedin: "Connect on LinkedIn", github: "View GitHub", cv: "Download resume" },
   },
-
-  introductionSection: {
-    introText: "Hello, my name is",
-    name: "Thiago Costa",
-    text: "Software Developer with experience in enterprise applications, automation, and systems integration. I build scalable and maintainable solutions.",
-  },
-
-  aboutMeSection: {
-    sectionName: "About Me",
-    title: "Full Stack Software Developer",
-    subtitle: "Turning complex requirements into simple and scalable solutions.",
-    text: "I have over 4 years of experience working with enterprise systems, process automation, and infrastructure. I am involved in the entire development lifecycle, from requirements gathering to deployment and monitoring.",
-    text2: "My main expertise includes Java, Spring Boot, Node.js, Docker, Linux, and enterprise systems integration.",
-    backendCard: {
-      title: "Back-End",
-      description: "Development of APIs, microservices, and enterprise integrations.",
-      subtitle: "4+ YEARS"
-    },
-
-    InfrastructureCard: {
-      title: "Infrastructure",
-      description: "Docker, Linux, CI/CD, and environment automation.",
-      subtitle: "DEVOPS"
-    },
-
-    architectureCard: {
-      title: "Architecture",
-      description: "Scalable systems and solutions for mission-critical environments.",
-      subtitle: "SOFTWARE"
-    },
-  },
-
-  skillsSection: {
-    sectionName: "Tech Stack",
-    title: "Technologies & Tools",
-    subtitle: "Experience building web applications, enterprise systems, RESTful APIs, and process automation solutions using modern Java and JavaScript technologies.",
-  },
-
-  underConstruction: {
-    text: "Sorry, website under development!"
-  },
-
-  navbar: {
-    home: "Home",
-    about: "About",
-    contact: "Contact",
-    projects: "Projects",
-    certifications: "Certifications"
-  },
-
-  curriculum: {
-    link: "https://drive.google.com/uc?export=download&id=17Q1Lk7IzkZ8IhEkoN2dbPhxxV906nvTE"
-  },
-
-  buttons: {
-    seeProjects: "Projects",
-  },
-
-  footer: {
-    main: {
-      text: "Building scalable APIs, automation solutions and enterprise systems with Java, Spring Boot, Node.js and Docker.",
-      secondaryText: "Open to new opportunities.",
-    },
-    navigation: "NAVIGATION",
-    stack: "MAIN STACK",
-    backToTop: "BACK TO TOP",
-  },
-
-
+  underConstruction: { text: "Sorry, website under development!" },
+  curriculum: { link: "https://drive.google.com/uc?export=download&id=17Q1Lk7IzkZ8IhEkoN2dbPhxxV906nvTE" },
+  buttons: { seeProjects: "View projects", contact: "Get in touch" },
+  navbar: { home: "Home", about: "About", contact: "Contact", projects: "Projects", certifications: "Certifications" },
+  footer: { main: { text: "Building scalable APIs, automation solutions and enterprise systems with Java, Spring Boot, Node.js and Docker.", secondaryText: "Open to new opportunities." }, navigation: "NAVIGATION", stack: "MAIN STACK", backToTop: "BACK TO TOP" },
   projects: {
-    "cronos": {
-      title: "Cronos",
-      subtitle: "Private Corporate Project",
-      description: "Desktop system for monitoring users' time and productivity."
-    },
-    "sci": {
-      title: "SCI - Sistema de Controle Integrado",
-      subtitle: "Private Corporate Project",
-      description: "DMS for managing engineering documents, with document versioning and traceability."
-    },
-    "icone-website": {
-      title: "Portal Institucional da Icone Consultoria e Engenharia",
-      subtitle: "Corporate Website",
-      description: "Landing page for Icone - Inoue, an engineering consulting firm."
-    },
-    "kataink": {
-      title: "KataInk",
-      subtitle: "University Project",
-      description: "Web application for learning Katakana through handwriting practice."
-    },
-    "personal-website": {
-      title: "Personal Portfolio",
-      subtitle: "Website",
-      description: "Personal portfolio website hosted on AWS and GitHub Pages."
-    },
-    "keycloak": {
-      title: "SSO",
-      subtitle: "Private Corporate Project",
-      description: "Single Sign-On (SSO) solution for user authentication and authorization using Keycloak."
-    },
-    "iinvent": {
-      title: "IInvent",
-      subtitle: "Private Corporate Project",
-      description: "Inventory management and stock control system for businesses."
-    }
+    cronos: { title: "Cronos", subtitle: "Private Corporate Project", description: "Desktop system for monitoring users' time and productivity." }, sci: { title: "SCI - Sistema de Controle Integrado", subtitle: "Private Corporate Project", description: "DMS for managing engineering documents, with document versioning and traceability." }, "icone-website": { title: "Icone Consulting and Engineering Website", subtitle: "Corporate Website", description: "Landing page for Icone - Inoue, an engineering consulting firm." }, kataink: { title: "KataInk", subtitle: "University Project", description: "Web application for learning Katakana through handwriting practice." }, "personal-website": { title: "Personal Portfolio", subtitle: "Website", description: "Personal portfolio website hosted on AWS and GitHub Pages." }, keycloak: { title: "SSO", subtitle: "Private Corporate Project", description: "Single Sign-On solution for user authentication and authorization using Keycloak." }, iinvent: { title: "IInvent", subtitle: "Private Corporate Project", description: "Inventory management and stock control system for businesses." },
   }
-
 };
