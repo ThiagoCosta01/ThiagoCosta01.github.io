@@ -9,9 +9,9 @@
 
 **Tipo:** Pessoal 
 
-**Última Versão Lançada:**  0.0.2
+**Última Versão Lançada:**  Em desenvolvimento
 
-**Versão em Desenvolvimento:** 0.0.3
+**Versão em Desenvolvimento:** 0.0.0
 
 **Descrição:** Meu site de portfólio.
 
@@ -108,6 +108,9 @@ apps/(nome do app)
 3. **Enviar para github pages**
 - npm run deploy
 
+## Observação
+- push/merge na branch principal envia build para s3 e gh pages.
+
 </details>
 
 ---
@@ -149,11 +152,12 @@ apps/(nome do app)
 
 # Pendentes
 
-[] - Organizar projetos
-
-[] - Cmd em movimento
 
 ## Feitos
+
+[ x ] - Cmd em movimento
+
+[ x ] - Organizar projetos
 
 [ x ] - Atualizar footer
 
@@ -168,4 +172,5 @@ apps/(nome do app)
 [ x ] - Seção de skills
 
 [ x ] - Currículo Inglês
+
 </details>
