@@ -12,8 +12,8 @@ export default function IntroductionSection() {
       <div className={styles.content}>
         <div className={styles.texts}>
           <span className={styles.greeting}>{t.introductionSection.introText}</span>
-          <span className={styles.eyebrow}>{t.introductionSection.eyebrow}</span>
           <h1 id="hero-title">{t.introductionSection.name}</h1>
+          <span className={styles.eyebrow}>{t.introductionSection.eyebrow}</span>
           <div className={styles.stack} aria-label="Principais tecnologias">
             {['Java', 'Spring Boot', 'Docker', 'Node.js', 'React'].map((item) => <span key={item}>{item}</span>)}
           </div>
