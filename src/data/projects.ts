@@ -6,28 +6,12 @@ import iconeWebsitePicture from "../assets/images/icone_website.png";
 import katainkPicture from "../assets/images/kataink.png";
 import sciPicture from "../assets/images/sci.png";
 import iinventPicture from "../assets/images/iinvent.png";
+import btcrtPicture from "../assets/images/btcrt.png";
 
 export const projects: Project[] = [
-    {
-        id: "kataink",
-        picture: katainkPicture,
-        technologies: ["react", "typescript"],
-        link: "https://thiagocosta01.github.io/kataink/",
-        repositoryURL: "https://github.com/ThiagoCosta01/kataink",
-        hostedURL: "https://kataink.thiagocostadev.com",
-        isFinished: true,
-
-    },
     
-    {
-        id: "personal-website",
-        picture: portfolioPicture,
-        technologies: ["react", "typescript"],
-        link: "https://thiagocostadev.com",
-        repositoryURL: "https://github.com/ThiagoCosta01/ThiagoCosta01.github.io",
-        hostedURL: "https://thiagocostadev.com",
-        isFinished: true,
-    },
+    
+    
 
     {
         id: "cronos",
@@ -47,7 +31,24 @@ export const projects: Project[] = [
         otherURL: "https://www.controle.net/faq/ged-o-que-e-gestao-eletronica-de-documentos",
         isFinished: true,
     },
-
+    {
+        id: "kataink",
+        picture: katainkPicture,
+        technologies: ["react", "typescript"],
+        link: "https://thiagocosta01.github.io/kataink/",
+        repositoryURL: "https://github.com/ThiagoCosta01/kataink",
+        hostedURL: "https://kataink.thiagocostadev.com",
+        isFinished: true,
+    },
+    {
+        id: "personal-website",
+        picture: portfolioPicture,
+        technologies: ["react", "typescript"],
+        link: "https://thiagocostadev.com",
+        repositoryURL: "https://github.com/ThiagoCosta01/ThiagoCosta01.github.io",
+        hostedURL: "https://thiagocostadev.com",
+        isFinished: true,
+    },
     {
         id: "icone-website",
         picture: iconeWebsitePicture,
@@ -55,6 +56,15 @@ export const projects: Project[] = [
         link: "https://www.iconeconsult.com.br/",
         hostedURL: "https://www.iconeconsult.com.br/",
         isFinished: true,
+    },
+    {
+        id: "btcrt",
+        picture: btcrtPicture,
+        technologies: ["typescript"],
+        isFinished: true,
+        link: "https://chromewebstore.google.com/detail/btc-rt-bitcoin-currency-e/aalacfmaoifgnliggfnboogdpifjogle?authuser=0&hl=pt-BR",
+        repositoryURL: "https://github.com/ThiagoCosta01/BitcoinCurrencyExtension",
+        hostedURL: "https://chromewebstore.google.com/detail/btc-rt-bitcoin-currency-e/aalacfmaoifgnliggfnboogdpifjogle?authuser=0&hl=pt-BR",
     },
     {
         id: "iinvent",
@@ -72,6 +82,7 @@ export const projects: Project[] = [
         otherURL: "https://www.keycloak.org/",
         isFinished: true,
     },
+    
 
 
 ];

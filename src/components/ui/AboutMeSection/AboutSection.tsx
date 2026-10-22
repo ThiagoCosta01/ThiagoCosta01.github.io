@@ -1,4 +1,5 @@
 import { useLanguage } from "../../../context/LanguageContext";
+import Timeline from "../Timeline/Timeline";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
@@ -8,25 +9,7 @@ export default function AboutSection() {
         <section className={styles.container}>
             <div className={styles.content}>
 
-                <div className={styles.cardsContainer}>
-                    <div className={styles.card}>
-                        <h3>{t.aboutMeSection.backendCard.title}</h3>
-                        <p>{t.aboutMeSection.backendCard.description}</p>
-                        <span>{t.aboutMeSection.backendCard.subtitle}</span>
-                    </div>
 
-                    <div className={styles.card}>
-                        <h3>{t.aboutMeSection.InfrastructureCard.title}</h3>
-                        <p>{t.aboutMeSection.InfrastructureCard.description}</p>
-                        <span>{t.aboutMeSection.InfrastructureCard.subtitle}</span>
-                    </div>
-
-                    <div className={styles.card}>
-                        <h3>{t.aboutMeSection.architectureCard.title}</h3>
-                        <p>{t.aboutMeSection.architectureCard.description}</p>
-                        <span>{t.aboutMeSection.architectureCard.subtitle}</span>
-                    </div>
-                </div>
 
                 <div className={styles.textContent}>
                     <span className={styles.label}>{t.aboutMeSection.sectionName}</span>
@@ -43,7 +26,34 @@ export default function AboutSection() {
                         {t.aboutMeSection.text2}
                     </p>
                 </div>
+
+                <div className={styles.timelineContainer}>
+
+                    <Timeline />
+                </div>
+
             </div>
+            
+            <div className={styles.cardsContainer}>
+                <div className={styles.card}>
+                    <h3>{t.aboutMeSection.backendCard.title}</h3>
+                    <p>{t.aboutMeSection.backendCard.description}</p>
+                    <span>{t.aboutMeSection.backendCard.subtitle}</span>
+                </div>
+
+                <div className={styles.card}>
+                    <h3>{t.aboutMeSection.InfrastructureCard.title}</h3>
+                    <p>{t.aboutMeSection.InfrastructureCard.description}</p>
+                    <span>{t.aboutMeSection.InfrastructureCard.subtitle}</span>
+                </div>
+
+                <div className={styles.card}>
+                    <h3>{t.aboutMeSection.architectureCard.title}</h3>
+                    <p>{t.aboutMeSection.architectureCard.description}</p>
+                    <span>{t.aboutMeSection.architectureCard.subtitle}</span>
+                </div>
+            </div>
+
         </section>
     );
 }

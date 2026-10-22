@@ -1,0 +1,131 @@
+.timeline {
+  --timeline-accent: #a8f12b;
+  --timeline-text: #aeb8b2;
+  --timeline-muted: #aab4ae;
+  --timeline-line: #355c16;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 440px;
+  padding: 10px 0;
+  color: var(--timeline-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 72px 42px minmax(0, 1fr);
+  position: relative;
+  min-height: 88px;
+}
+
+.item:last-child {
+  min-height: 52px;
+}
+
+.year {
+  padding-top: 8px;
+  color: var(--timeline-muted);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.markerColumn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.markerColumn::after {
+  position: absolute;
+  top: 25px;
+  bottom: -1px;
+  left: 50%;
+  width: 1px;
+  background: var(--timeline-line);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.item:last-child .markerColumn::after {
+  bottom: 0;
+}
+
+.marker {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: var(--timeline-accent);
+  color: #18300b;
+  box-shadow: 0 0 0 6px #111811;
+}
+
+.content {
+  min-width: 0;
+  padding: 5px 0 22px;
+}
+
+.description {
+  margin: 0;
+  color: var(--timeline-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.separator {
+  color: var(--timeline-text);
+}
+
+.company {
+  display: inline;
+  color: var(--timeline-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.company {
+  text-decoration: none;
+}
+
+a.company:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a.company:focus-visible {
+  outline: 2px solid var(--timeline-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 420px) {
+  .item {
+    grid-template-columns: 66px 36px minmax(0, 1fr);
+    min-height: 84px;
+  }
+
+  .year {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .content {
+    padding-bottom: 20px;
+  }
+}

@@ -3,10 +3,10 @@
   --background-secondary: rgba(0, 0, 255, 0.22);
   
 
-  --surface: #111111;
+  --surface: #232628;
   --surface-hover: #371e3b;
 
-  --primary: #14B8A6;
+  --primary: #00DF9A;
   --primary-hover: #348b71;
 
   --text: #f8fafc;
@@ -24,7 +24,7 @@
 [data-theme="light"] {
   --background: #ffffff;
 
-  --surface: #efefef;
+  --surface: #F4F3EE;
   --surface-hover: #371e3b;
 
   --text: #0f172a;

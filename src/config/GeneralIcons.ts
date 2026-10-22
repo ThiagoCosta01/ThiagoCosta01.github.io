@@ -3,6 +3,8 @@ import { AiFillMoon, AiFillPicture  } from "react-icons/ai";
 import { PiSunHorizonFill } from "react-icons/pi";
 import { BsFillCloudDownloadFill } from "react-icons/bs";
 import { FaAnglesDown, FaComputer  } from "react-icons/fa6";
+import { MdWork } from "react-icons/md";
+import { PiStudentFill } from "react-icons/pi";
 import { GoProjectSymlink } from "react-icons/go";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
@@ -24,4 +26,6 @@ export const GeneralIcons = {
     externalLink: FaExternalLinkSquareAlt,
     externalLink2: LiaExternalLinkAltSolid,
     externalLink3: GoProjectSymlink,
+    work: MdWork,
+    graduation: PiStudentFill
 }
