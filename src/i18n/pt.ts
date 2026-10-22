@@ -42,6 +42,7 @@ export const pt = {
     "personal-website": { title: "Portfólio pessoal", subtitle: "Website", description: "Meu site pessoal de portfólio hospedado na AWS e no GitHub Pages." },
     keycloak: { title: "SSO", subtitle: "Projeto Corporativo Privado", description: "SSO de autenticação e autorização de usuários utilizando Keycloak." },
     iinvent: { title: "IInvent", subtitle: "Projeto Corporativo Privado", description: "Sistema de gerenciamento de inventário e controle de estoque para empresas." },
+    btcrt: { title: "BTC RT", subtitle: "Extensão para Google Chrome", description: "Extensão para Google Chrome que exibe a cotação do Bitcoin em tempo real na barra de ferramentas do navegador." },
   },
   credentials: {
     "english-it": { title: "Inglês para Tecnologia da Informação", description: "Vocabulário e comunicação técnica para ambientes de desenvolvimento, suporte e documentação." },
